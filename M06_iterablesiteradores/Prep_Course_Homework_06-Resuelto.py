@@ -76,9 +76,9 @@ print(lista)
 
 
 # 7) La sucesión de Fibonacci es un listado de números que sigue la fórmula: <br>
-# n<sub>0</sub> = 0<br>
-# n<sub>1</sub> = 1<br>
-# n<sub>i</sub> = n<sub>i-1</sub> + n<sub>i-2</sub><br>
+# n(0) = 0
+# n(1) = 1
+# n(i) = n(i-1) + n(i-2)
 # Crear una lista con los primeros treinta números de la sucesión.<br>
 
 # In[23]:
