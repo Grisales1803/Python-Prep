@@ -8,11 +8,39 @@
 # In[1]:
 
 
+def factorial(num):
+    
+    # Uso de Assert para verificar que todo esté en orden:
+    '''
+    assert type(num) != str, f'{num} no puede ser str'
+    assert type(num) != float, f'{num} tiene que ser entero'
+    assert num > 0, f'{num} tiene que ser mayor a cero'
+    '''
 
+    if type(num) == str:
+        raise ValueError(f'{num} no puede ser str')  
+    elif type(num) == float:
+        raise ValueError(f'{num} tiene que ser entero')
+    elif num < 1:
+        raise ValueError(f'{num} tiene que ser un entero positivo')  
+    else:
+        fact = 1
+        for i in range(1,num+1):
+            fact = fact * i
+        
+        return fact
+
+print(factorial(3))
+print(factorial(-2))
+print(factorial(1.23))
+print(factorial('6'))
+
+    
 
 # 2) En la función que hace la conversión de grados, validar que los parámetros enviados sean los esperados, de no serlo, informar cuáles son los valores esperados.
 
 # In[5]:
+
 
 
 
